@@ -9,13 +9,10 @@ In diesem Repository findest du während des Workshops den Quelltext unserer Bei
 
 # 💬 Chat
 
-Während des Workshops verwenden wir einen [Chat über den Dienst Gitter](https://gitter.im/angular-schule/schiltach
-).
+Während des Workshops verwenden wir einen [Chat über den Dienst Gitter](https://gitter.im/angular-schule/2020-02-schiltach).
 Hier können wir Codeschnipsel, Links und andere Sachen teilen. Folge einfach diesem Link:
 
-[<img src="https://badges.gitter.im/angular-schule/schiltach
-.svg" width="160">](https://gitter.im/angular-schule/schiltach
-)
+[<img src="https://badges.gitter.im/angular-schule/2020-02-schiltach.svg" width="160">](https://gitter.im/angular-schule/2020-02-schiltach)
 
 Um die Nachrichten lesen zu können, musst du nicht angemeldet sein.
 Sofern du einen Account bei Gitlab, GitHub oder Twitter hast, kannst du dich über einen der Dienste einloggen und an der Diskussion beteiligen. Eine Beteiligung am Chat ist freiwillig, und es ist für den Kurs nicht notwendig, dass du dich aktiv an der Diskussion beteiligst.  
