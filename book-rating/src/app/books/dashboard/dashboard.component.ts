@@ -13,7 +13,8 @@ export class DashboardComponent implements OnInit {
 
   books: Book[];
 
-  constructor(private bs: BookRatingService) { }
+  constructor(private bs: BookRatingService) {
+  }
 
   ngOnInit() {
     this.books = [{
@@ -43,10 +44,14 @@ export class DashboardComponent implements OnInit {
 
   doRateUp(book: Book) {
     const ratedBook = this.bs.rateUp(book);
+    // const ratedBook = {
+    //   ...book,
+    //   rating: book.rating < 5 ? ++book.rating : 5
+    // };
     this.update(ratedBook);
   }
 
-  update(ratedBook: Book) {
+  private update(ratedBook: Book) {
     this.books = this.books
       .map(book => book.isbn === ratedBook.isbn ? ratedBook : book)
       .sort((a, b) => b.rating - a.rating);
