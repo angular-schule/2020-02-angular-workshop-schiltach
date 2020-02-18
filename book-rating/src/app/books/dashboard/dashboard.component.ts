@@ -32,4 +32,12 @@ export class DashboardComponent implements OnInit {
 
     // console.table(this.books);
   }
+
+  doRateDown(book: Book) {
+    debugger
+  }
+
+  doRateUp(book: Book) {
+    debugger
+  }
 }
