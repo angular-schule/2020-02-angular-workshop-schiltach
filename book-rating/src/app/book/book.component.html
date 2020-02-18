@@ -4,7 +4,11 @@
       src="http://api.angular.schule/avatar/{{ book.rating }}">
     <div class="card-title">
       <h2>
-        {{ book.title }} - {{ book.rating }}
+        {{ book.title }}
+        <span class="badge badge-secondary">
+          <ng-container
+            *brRepeat="book.rating">⭐️</ng-container>
+        </span>
       </h2>
     </div>
     <p>{{ book.description }}</p>
