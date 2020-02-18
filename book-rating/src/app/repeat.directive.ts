@@ -1,22 +1,19 @@
-import { Directive, TemplateRef, ViewContainerRef, Input, OnChanges } from '@angular/core';
+import { Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
 
 @Directive({
   selector: '[brRepeat]'
 })
-export class RepeatDirective implements OnChanges {
+export class RepeatDirective {
 
-  @Input() brRepeat: number;
+  @Input() set brRepeat(times: number) {
+    this.vcr.clear();
+    for (let i = 0; i < times; i++) {
+      this.vcr.createEmbeddedView(this.template);
+    }
+  }
 
   constructor(
     private template: TemplateRef<any>,
     private vcr: ViewContainerRef
   ) { }
-
-  ngOnChanges() {
-    this.vcr.clear();
-
-    for (let i = 0; i < this.brRepeat; i++) {
-      this.vcr.createEmbeddedView(this.template);
-    }
-  }
 }
