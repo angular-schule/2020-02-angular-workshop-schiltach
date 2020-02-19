@@ -17,6 +17,12 @@ Hier können wir Codeschnipsel, Links und andere Sachen teilen. Folge einfach di
 Um die Nachrichten lesen zu können, musst du nicht angemeldet sein.
 Sofern du einen Account bei Gitlab, GitHub oder Twitter hast, kannst du dich über einen der Dienste einloggen und an der Diskussion beteiligen. Eine Beteiligung am Chat ist freiwillig, und es ist für den Kurs nicht notwendig, dass du dich aktiv an der Diskussion beteiligst.  
 
+# 🎮 RxJS Playground
+
+Du kannst dir entweder  
+* das Repo per git herunterladen und den Ordner `rxjs-playground` erforschen<br>**oder**<br>  
+* die ZIP-Datei herunterladen: [rxjs-playground.zip](https://github.com/angular-schule/2020-02-angular-workshop-schiltach/files/4227874/rxjs-playground.zip)
+
 
 # ✅ Vorbereitung
 
