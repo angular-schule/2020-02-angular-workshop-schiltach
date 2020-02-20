@@ -23,12 +23,14 @@ export class HigherorderComponent implements OnInit {
      * Quelle: this.source$
      * Ziel: this.result$
      */
+    this.result$ = this.source$.pipe(
+      switchMap(e => this.es.echo(e))
+    );
 
-    
 
     /******************************/
 
-    this.source$.subscribe(value => this.logStream$.next(`SOURCE: ${value}`));
+    //this.source$.subscribe(value => this.logStream$.next(`SOURCE: ${value}`));
     this.result$.subscribe(value => this.logStream$.next(`🚀 ${value}`));
   }
 
