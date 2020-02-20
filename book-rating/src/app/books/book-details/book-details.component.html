@@ -1,6 +1,7 @@
-<h2>Buch {{ book?.isbn }}</h2>
+<h2>Buch {{ (book$ | async)?.isbn }}</h2>
 
-<p>{{ book?.description }}</p>
+<p>{{ (book$ | async)?.description }}</p>
 
 
 <a routerLink="/books/9783864903571">Gehe zu altem Buch</a><br>
+<a routerLink="/books/xxx">Gehe zu 404 Buch</a><br>
