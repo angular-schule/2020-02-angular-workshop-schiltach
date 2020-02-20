@@ -11,7 +11,7 @@ export class CreatingComponent implements OnInit {
 
   ngOnInit() {
     /**
-     * Erstelle ein Observable und abonniere den Datenstrom.
+     * Erstelle ein Observable und abonniere den Datenstrom.  
      * Du kannst die Methode this.log() verwenden, um eine Ausgabe in der schwarzen Box im Browser zu erzeugen.
      */
 
