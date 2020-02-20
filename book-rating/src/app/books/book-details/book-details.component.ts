@@ -20,7 +20,8 @@ export class BookDetailsComponent {
         isbn: 'FEHLER',
         description: 'Error loadig' + e.url
       }))
-    ))
+    )),
+    share()
   );
 
   constructor(private route: ActivatedRoute, private bs: BookStoreService) { }
