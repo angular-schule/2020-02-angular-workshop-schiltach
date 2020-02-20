@@ -15,6 +15,14 @@ export class CreatingComponent implements OnInit {
      * Du kannst die Methode this.log() verwenden, um eine Ausgabe in der schwarzen Box im Browser zu erzeugen.
      */
 
+    // 1. Baustein: hallo Observers
+    const observer = {
+      next: smilie => this.log(smilie),
+      error: e => this.log('FEHLER!' + e),
+      complete: () => this.log('COMPLETE!')
+    };
+
+     of('😀', '😌', '😇').subscribe(observer);
 
 
      /*****************************/
