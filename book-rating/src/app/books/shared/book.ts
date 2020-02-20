@@ -3,4 +3,7 @@ export interface Book {
   title: string;
   description: string;
   rating: number;
+
+  // NEU
+  firstThumbnailUrl: string;
 }
